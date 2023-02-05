@@ -1,0 +1,64 @@
+// Colors gradient
+@mixin color-gradient-100($deg) {
+    background: linear-gradient($deg, #a0c5ed 0%, #6299d5 100%);
+}
+@mixin color-gradient-200($deg) {
+    background: linear-gradient($deg, #499ce4 0%, #2f4fa9 100%);
+}
+@mixin color-gradient-300($deg) {
+    background: linear-gradient($deg, #1b65b9 0%, #3056ae 100%);
+}
+
+@mixin gutters($margin, $padding) {
+    margin: 0 $margin;
+    > div {
+        padding: 0 $padding;
+    }
+}
+
+@mixin transition-ease-out {
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+@mixin bg-cover($image) {
+    background-image: $image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin border-radius($radius, $sides: "all") {
+    @if $sides == "top" {
+        border-top-left-radius: $radius;
+        border-top-right-radius: $radius;
+    } @else if $sides == "bottom" {
+        border-bottom-left-radius: $radius;
+        border-bottom-right-radius: $radius;
+    } @else if $sides == "left" {
+        border-top-left-radius: $radius;
+        border-bottom-left-radius: $radius;
+    } @else if $sides == "right" {
+        border-top-right-radius: $radius;
+        border-bottom-right-radius: $radius;
+    } @else if $sides == "all" {
+        border-radius: $radius;
+    } @else {
+        border-radius: $radius;
+    }
+}
+
+@mixin font-size($fs-map) {
+    @each $fs-breakpoint, $fs-font-size in $fs-map {
+        @if $fs-breakpoint == null {
+            font-size: $fs-font-size;
+        } @else {
+            @media screen and (min-width: $fs-breakpoint) {
+                font-size: $fs-font-size;
+            }
+        }
+    }
+}

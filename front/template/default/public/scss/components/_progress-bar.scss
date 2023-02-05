@@ -1,0 +1,16 @@
+.progress-default {
+    margin-bottom: 1rem;
+    .progress {
+        background-color: $--color-primary-100;
+        margin-bottom: 0;
+    }
+    .progress-bar {
+        background-color: $--color-primary-300;
+        @include border-radius(0.25rem, "right");
+        @include transition-ease-out;
+    }
+    .progress-label {
+        font-size: 45%;
+        line-height: 1.2em;
+    }
+}

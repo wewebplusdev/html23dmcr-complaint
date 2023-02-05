@@ -1,0 +1,32 @@
+@import '../scss/plugin/_animate';
+@import '../scss/plugin/_aos';
+@import '../scss/plugin/_bootstrap';
+@import '../scss/plugin/_fancybox';
+@import '../scss/plugin/_feather';
+@import '../scss/plugin/_normalize';
+@import '../scss/plugin/_select2';
+@import '../scss/plugin/_slick-theme';
+@import '../scss/plugin/_slick';
+@import '../scss/plugin/_fontawsome';
+
+@import '../scss/configs/_mixin';
+@import '../scss/configs/_variable';
+@import '../scss/configs/_font';
+@import '../scss/configs/_base';
+
+@import '../scss/components/_breadcrumb';
+@import '../scss/components/_button';
+@import '../scss/components/_editor-content';
+@import '../scss/components/_form';
+@import '../scss/components/_pagination';
+@import '../scss/components/_whead';
+@import '../scss/components/_modal';
+@import '../scss/components/_sweetalert';
+@import '../scss/components/_progress-bar';
+
+@import '../scss/layouts/_header';
+@import '../scss/layouts/_footer';
+ 
+@import '../scss/pages/_default';
+
+@import '../scss/layouts/_breakpoints';

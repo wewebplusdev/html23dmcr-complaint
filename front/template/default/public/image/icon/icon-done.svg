@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45.887" height="44.68" viewBox="0 0 45.887 44.68">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#a5c9ef"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a3c6eb"/>
+      <stop offset="1" stop-color="#80b0e5"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_x0020_1" transform="translate(0.02 -22.43)">
+    <path id="Path_8058" data-name="Path 8058" d="M376.464,48.779A13.174,13.174,0,1,1,389.639,35.6,13.189,13.189,0,0,1,376.464,48.779Z" transform="translate(-353.542)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+    <path id="Path_8059" data-name="Path 8059" d="M605.346,339.5a.669.669,0,0,1-.473-.2l-3.744-3.744a.669.669,0,0,1,.946-.946l3.271,3.271,8-8a.669.669,0,0,1,.946.946L605.82,339.3a.67.67,0,0,1-.473.2Z" transform="translate(-584.789 -298.987)" fill="#82abda" fill-rule="evenodd"/>
+    <path id="Path_8060" data-name="Path 8060" d="M324.928,1138.316c-6.123,0-14.673-2.306-15.911-2.306a.539.539,0,0,1-.142-1.058v-7.184a.541.541,0,0,1,.17-1.052c4.111,0,5.141-4.342,11.93-2.475,1.78.489,6.191.135,8.575.135a2.888,2.888,0,0,1,2.834,2.271c3.269-1.088,6.725-2.383,9.947-3.293a2.957,2.957,0,0,1,2.289,5.391l-6.63,3.828c-3.725,2.15-3.289,4.384-10.049,5.521a18.358,18.358,0,0,1-3.014.222Z" transform="translate(-300.211 -1071.206)" fill="#e6e6e6" fill-rule="evenodd"/>
+    <path id="Path_8061" data-name="Path 8061" d="M7.481,1169.853H1.844a1.866,1.866,0,0,1-1.864-1.864v-9.575a1.866,1.866,0,0,1,1.864-1.864H7.481a1.866,1.866,0,0,1,1.864,1.864v9.575a1.866,1.866,0,0,1-1.864,1.864Z" transform="translate(0 -1103.628)" fill-rule="evenodd" fill="url(#linear-gradient-2)"/>
+    <path id="Path_8062" data-name="Path 8062" d="M117.945,1474.457a1.573,1.573,0,0,1,0-3.147A1.573,1.573,0,0,1,117.945,1474.457Z" transform="translate(-113.283 -1409.925)" fill="#fdfdfd" fill-rule="evenodd"/>
+  </g>
+</svg>

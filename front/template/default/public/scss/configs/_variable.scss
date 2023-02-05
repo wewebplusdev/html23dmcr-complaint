@@ -1,0 +1,143 @@
+// Colors
+$--font-noto-sans-thai: "Noto Sans Thai", sans-serif;
+
+// Colors
+$--color-primary-1: #F6FAFF;
+$--color-primary-100: #a5c9ef;
+$--color-primary-200: #6895c7;
+$--color-primary-300: #3056ae;
+$--color-secondary: #39f8ff;
+$--color-success: #71c003;
+$--color-info: #17a2b8;
+$--color-warning: #ffc107;
+// $--color-danger: #dc3545;
+$--color-danger: #ff5050;
+$--color-gray-100: #9a9a9a;
+$--color-gray-200: #777777;
+$--color-gray-300: #6c757d;
+$--color-light: #fff;
+$--color-dark: #000;
+$--color-default: #153045;
+// $--color-border: #666;
+$--color-border: #e0eefb;
+
+// Font size
+$--typo-xs: (
+    null: 12px,
+    768px: 14px,
+    992px: 16px,
+    1200px: 18px,
+);
+$--typo-sm: (
+    null: 14px,
+    768px: 18px,
+    992px: 20px,
+    1200px: 22px,
+);
+$--typo-md: (
+    null: 16px,
+    768px: 18px,
+    992px: 20px,
+    1200px: 22px,
+    1441px: 24px,
+);
+$--typo-lg: (
+    null: 22px,
+    768px: 24px,
+    992px: 26px,
+    1200px: 28px,
+    1441px: 30px,
+);
+$--typo-xl: (
+    null: 30px,
+    768px: 32px,
+    992px: 36px,
+    1200px: 38px,
+    1440px: 40px,
+);
+$--typo-default: (
+    null: 14px,
+    768px: 16px,
+    992px: 18px,
+    1200px: 20px,
+);
+// Font weight
+$--fw-normal: 400;
+$--fw-medium: 500;
+$--fw-bold: 700;
+
+// Border radius
+$--border-radius: 5px;
+
+// Shadow
+// $--box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+$--box-shadow: 0 0.25rem 2rem rgba(235, 244, 253, 0.39);
+
+/* Using SCSS variables to store breakpoints */
+$breakpoint-xxxl: 1600px;
+$breakpoint-xxl: 1440px;
+$breakpoint-xl: 1199px;
+$breakpoint-lg: 991px;
+$breakpoint-md: 767px;
+$breakpoint-sm: 575px;
+
+.text-primary {
+    color: $--color-primary-100 !important;
+}
+.text-secondary {
+    color: $--color-secondary !important;
+}
+.text-success {
+    color: $--color-success !important;
+}
+.text-info {
+    color: $--color-info !important;
+}
+.text-warning {
+    color: $--color-warning !important;
+}
+.text-danger {
+    color: $--color-danger !important;
+}
+.text-gray {
+    color: $--color-gray-100 !important;
+}
+.text-light {
+    color: $--color-light !important;
+}
+.text-dark {
+    color: $--color-dark !important;
+}
+.text-default {
+    color: $--color-default !important;
+}
+
+.fw-normal {
+    font-weight: $--fw-normal;
+}
+.fw-medium {
+    font-weight: $--fw-medium;
+}
+.fw-bold {
+    font-weight: $--fw-bold;
+}
+
+.typo-xs {
+    @include font-size($--typo-xs);
+}
+.typo-sm {
+    @include font-size($--typo-sm);
+}
+.typo-md {
+    @include font-size($--typo-md);
+}
+.typo-lg {
+    @include font-size($--typo-lg);
+}
+.typo-xl {
+    @include font-size($--typo-xl);
+}
+.typo-default {
+    // font-size: $--typo-default;
+    @include font-size($--typo-default);
+}

@@ -1,0 +1,52 @@
+.pagination-block{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination{
+    margin: 0;
+    .link{
+        display: block; 
+        min-width: 54px; 
+        height: 54px; 
+        padding: 0 5px; 
+        text-align: center; 
+        line-height: 54px; 
+        border-radius: 10px;
+        background-color: $--color-default;
+        font-weight: $--fw-normal;
+        @include font-size($--typo-default); 
+        color: $--color-light;
+        &:hover{
+            color: $--color-primary-300;
+        }
+        span{
+            position: relative;
+            line-height: 54px;
+        }
+        &.link-text{
+            border-color: transparent;
+            background-color: transparent;
+            &:hover{
+                border-color: transparent;
+                background-color: transparent;
+            }
+        }
+    }
+    li{
+        display: inline-block; 
+        vertical-align: middle;
+        &.active{
+            .link{
+                color: $--color-light;
+                border-color: transparent;
+                background: none;
+                background-color: $--color-primary-300;
+            }
+        }
+    }
+    li + li{
+        margin-left: 10px;
+    }
+}

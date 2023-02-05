@@ -1,0 +1,74 @@
+.layout-header {
+    @include bg-cover(url("../../public/image/background/layout-header.png"));
+    background-position: center bottom;
+    padding: 14px 0;
+    .brand {
+        .logo {
+            width: 60px;
+            margin-left: -8px;
+        }
+        .title {
+            @include font-size($--typo-sm);
+            margin-left: 0.25rem;
+        }
+    }
+    .nav-btn {
+        .btn {
+            font-size: 14px;
+            font-weight: $--fw-bold;
+            img {
+                width: 30px;
+                margin-right: 4px;
+            }
+            .brand img {
+                margin-left: -4px;
+            }
+        }
+        .btn + .btn {
+            margin-left: 5px;
+        }
+    }
+}
+
+// breakpoint 767px
+@media (max-width: $breakpoint-md) {
+    .layout-header {
+        padding: 0;
+    }
+    .layout-header .brand {
+        padding: 5px 0;
+    }
+    .layout-header .brand .logo {
+        width: 50px;
+    }
+    .layout-header .nav-btn {
+        text-align: right;
+        margin: 0 -15px;
+        padding: 10px 15px 0 15px;
+        background-color: $--color-light;
+        border-bottom: 1px solid $--color-primary-300;
+    }
+    .layout-header .nav-btn .btn {
+        margin-bottom: 10px;
+        height: 30px;
+        line-height: 28px;
+    }
+    .layout-header .nav-btn .btn .brand {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .layout-header .nav-btn .btn img {
+        width: 20px;
+    }
+}
+// breakpoint 575px
+@media (max-width: $breakpoint-sm) {
+    .layout-header .nav-btn .btn {
+        img {
+            display: none;
+        }
+    }
+    .layout-header .nav-btn .btn {
+        min-width: 40px;
+    }
+}
