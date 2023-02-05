@@ -24,7 +24,7 @@
                         </div>
                         <div class="step-block">
                             <div class="progress-default d-md-none d-block">
-                                <div class="progress progress-step-3" style="height: 4px;">
+                                <div class="progress progress-step-4" style="height: 4px;">
                                     <div class="progress-bar"></div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                         ตำแหน่งที่เกิดเหตุ
                                     </div>
                                 </div>
-                                <div class="col item step-3 active">
+                                <div class="col item step-3">
                                     <div class="icon">
                                         <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-image.svg" alt="icon-image.svg">
                                     </div>
@@ -53,7 +53,7 @@
                                         รูปภาพหรือไฟล์แนบ
                                     </div>
                                 </div>
-                                <div class="col item step-4">
+                                <div class="col item step-4 active">
                                     <div class="icon">
                                         <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-resume.svg" alt="icon-resume.svg">
                                     </div>
@@ -85,7 +85,6 @@
                                         <div class="col-xl-7 col-lg-6">
                                             <div class="left-side">
                                                 <!--  data-aos="fade-up" data-aos-duration="2000" -->
-                                                <!-- <h2>step 1</h2> -->
                                                 <div class="whead">
                                                     <h3 class="title">
                                                         <div class="d-flex align-items-center">
@@ -188,6 +187,7 @@
                                                     </h3>
                                                     <p class="desc">(ระบบจะแสดงจุดปัจจุบันเมื่อเปิดโหมด GPS หรือสามารถเลื่อนจุดที่เกิดเหตุบนแผนที่ได้)</p>
                                                 </div>
+                                                <!-- Step 2 -->
                                                 <div class="contact-form formComplaint-step2" id="step-2">
                                                     <form class="form-default" data-toggle="validator" method="post" id="formComplaint-step2">
                                                         <div class="form-wrapper">
@@ -278,7 +278,7 @@
                             <!-- end Step 2 -->
 
                             <!-- Step 3 -->
-                            <div class="card card-step-3">
+                            <div class="card card-step-3" style="display: none;">
                                 <div class="card-body">
                                     <div class="row justify-content-between">
                                         <div class="col-xl-7 col-lg-6">
@@ -296,6 +296,7 @@
                                                         </div>
                                                     </h3>
                                                 </div>
+                                                <!-- Step 3 -->
                                                 <div class="contact-form formComplaint-step3" id="step-3">
                                                     <form class="form-default" data-toggle="validator" method="post" id="formComplaint-step3">
                                                         <div class="form-wrapper">
@@ -449,6 +450,111 @@
                                 </div>
                             </div>
                             <!-- end Step 3 -->
+
+                            <!-- Step 4 -->
+                            <div class="card card-step-4">
+                                <div class="card-body">
+                                    <div class="row justify-content-between">
+                                        <div class="col-xl-7 col-lg-6">
+                                            <div class="left-side">
+                                                <!--  data-aos="fade-up" data-aos-duration="2000" -->
+                                                <div class="whead">
+                                                    <h3 class="title">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="icon">
+                                                                <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-resume.svg" alt="icon-resume.svg">
+                                                            </div>
+                                                            <div class="txt">
+                                                                ข้อมูลผู้แจ้งเหตุ
+                                                            </div>
+                                                        </div>
+                                                    </h3>
+                                                </div>
+                                                <!-- Step 4  -->
+                                                <div class="contact-form formComplaint-step4" id="step-4">
+                                                    <form class="form-default" data-toggle="validator" method="post" id="formComplaint-step4">
+                                                        <div class="form-wrapper">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-xs-12">
+                                                                    <!--  data-aos="fade-right" data-aos-duration="2000" -->
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">ชื่อ-นามสกุล <span class="require"></span></label>
+                                                                        <input class="form-control" type="text" name="reporter_name" id="reporter_name" value="" data-error="กรุณากรอกชื่อ - นามสกุล">
+                                                                        <div class="help-block with-errors"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-xs-12">
+                                                                    <!--  data-aos="fade-right" data-aos-duration="2000" -->
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">เบอร์โทรศัพท์ <span class="require"></span></label>
+                                                                        <input class="form-control" type="text" name="reporter_telephone_number" id="reporter_telephone_number" value="" data-error="กรุณากรอกเบอร์โทรศัพท์">
+                                                                        <div class="help-block with-errors"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-xs-12">
+                                                                    <!--  data-aos="fade-right" data-aos-duration="2000" -->
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">อีเมล์ <span class="require"></span></label>
+                                                                        <input class="form-control" type="email" name="reporter_email" id="reporter_email" value="" data-error="กรุณากรอกอีเมล">
+                                                                        <div class="help-block with-errors"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-xs-12">
+                                                                    <!-- data-aos="fade-right" data-aos-duration="2000" -->
+                                                                    <div class="form-group">
+                                                                        <label class="control-label">เลขบัตรประจำตัวประชาชน <span class="require"></span></label>
+                                                                        <input class="form-control" type="text" name="reporter_idcard" id="reporter_idcard" value="" minlength="13" maxlength="13" data-error="กรุณากรอกหมายเลขบัตรประชาชน 13 หลัก">
+                                                                        <div class="help-block with-errors"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contact-form-action">
+                                                            <div class="wrapper">
+                                                                <!--  data-aos="fade-left" data-aos-duration="2000" -->
+                                                                <div>
+                                                                    <button type="button" class="btn btn-border-primary rounded-pill" onclick="FuncPrevious('.formComplaint-step3', '.formComplaint-step4')">
+                                                                        <div class="d-flex justify-content-center">
+                                                                            <div class="icon rounded-circle">
+                                                                                <span class="feather icon-chevron-left"></span>
+                                                                            </div>
+                                                                            <div class="txt">
+                                                                                ย้อนกลับ
+                                                                            </div>
+                                                                        </div>
+                                                                    </button>
+                                                                    <button type="submit" class="btn btn-primary btn-gradient rounded-pill" id="submitFormComplaint">
+                                                                        <div class="d-flex justify-content-center">
+                                                                            <div class="icon rounded-circle">
+                                                                                <span class="feather icon-chevron-right"></span>
+                                                                            </div>
+                                                                            <div class="txt">
+                                                                                ต่อไป
+                                                                            </div>
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4">
+                                            <?php include('inc/components/right-side.php'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end Step 4 -->
+
+
                         </div>
                     </div>
                 </div>

@@ -54,7 +54,21 @@
 	}
 }
 
-
+// breakpoint 1600px
+@media (max-width: $breakpoint-xxxl) {
+}
+// breakpoint 1440px
+@media (max-width: $breakpoint-xxl) {
+}
+// breakpoint 1199px
+@media (max-width: $breakpoint-xl) {
+}
+// breakpoint 991px
+@media (max-width: $breakpoint-lg) {
+}
+// breakpoint 767px
 @media (max-width: $breakpoint-md) {
-
+}
+// breakpoint 575px
+@media (max-width: $breakpoint-sm) {
 }

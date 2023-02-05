@@ -21446,6 +21446,12 @@ figure.contain img {
   opacity: 0.5;
 }
 
+@media (max-width: 767px) {
+  .btn {
+    height: 46px;
+    line-height: 46px;
+  }
+}
 .editor-content {
   font-size: 14px;
   color: #153045;
@@ -21900,6 +21906,16 @@ figure.contain img {
   margin-top: 0.75rem;
 }
 
+@media (max-width: 991px) {
+  .form-default .form-control {
+    height: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .form-default .form-control {
+    height: 48px;
+  }
+}
 .pagination-block {
   margin-top: 40px;
   display: -webkit-box;
@@ -22564,7 +22580,7 @@ div.swal2-html-container {
   min-height: 669px;
 }
 .report > [class*=card-step] > .card-body {
-  padding: 2rem;
+  padding: 2rem 3rem;
 }
 .report .whead .title {
   font-size: 22px;

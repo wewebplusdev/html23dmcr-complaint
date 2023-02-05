@@ -41,7 +41,7 @@
         background-size: contain;
         min-height: 669px;
         > .card-body {
-            padding: 2rem;
+            padding: 2rem 3rem;
         }
     }
     .whead {
@@ -337,6 +337,14 @@
             }
         }
     }
+}
+
+
+// breakpoint 1600px
+@media (max-width: $breakpoint-xxxl) {
+}
+// breakpoint 1440px
+@media (max-width: $breakpoint-xxl) {
 }
 
 // breakpoint 1199px
