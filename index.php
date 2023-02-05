@@ -337,24 +337,26 @@
                                                                                                 <tr class="fw-medium">
                                                                                                     <td class="pl-md-4">12 ม.ค.</td>
                                                                                                     <td>
-                                                                                                        <a href="javascript:void;" class="link" data-toggle="collapse" data-target="#demo">
-                                                                                                            <div class="row gutters-15">
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="icon">
-                                                                                                                        <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-image.svg" alt="icon-image.svg">
+                                                                                                        <div class="collapse-default">
+                                                                                                            <a href="javascript:void;" class="link collapsed" data-toggle="collapse" data-target="#demo">
+                                                                                                                <div class="row gutters-15">
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="icon">
+                                                                                                                            <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-image.svg" alt="icon-image.svg">
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <div class="col">
+                                                                                                                        <div class="title">
+                                                                                                                            landscape.jpeg
+                                                                                                                        </div>
+                                                                                                                        <div class="desc text-gray-100">2.4 mb.</div>
                                                                                                                     </div>
                                                                                                                 </div>
-                                                                                                                <div class="col">
-                                                                                                                    <div class="title">
-                                                                                                                        landscape.jpeg
-                                                                                                                    </div>
-                                                                                                                    <div class="desc text-gray-100">2.4 mb.</div>
+                                                                                                            </a>
+                                                                                                            <div id="demo" class="collapse">
+                                                                                                                <div class="pt-3">
+                                                                                                                    <img src="https://picsum.photos/200/300" alt="">
                                                                                                                 </div>
-                                                                                                            </div>
-                                                                                                        </a>
-                                                                                                        <div id="demo" class="collapse">
-                                                                                                            <div class="pt-3">
-                                                                                                                <img src="https://picsum.photos/200/300" alt="">
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </td>
@@ -362,38 +364,40 @@
                                                                                                 <tr>
                                                                                                     <td class="pl-md-4">12 ม.ค.</td>
                                                                                                     <td>
-                                                                                                        <a href="javascript:void;" class="link" data-toggle="collapse" data-target="#demo">
-                                                                                                            <div class="row gutters-15">
-                                                                                                                <div class="col-auto">
-                                                                                                                    <div class="icon">
-                                                                                                                        <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-image.svg" alt="icon-image.svg">
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <div class="col">
-                                                                                                                    <div class="title">
-                                                                                                                        landscape.jpeg
-                                                                                                                    </div>
-                                                                                                                    <?php $p = 10 ?>
-                                                                                                                    <!-- progress bar -->
-                                                                                                                    <div class="progress-default">
-                                                                                                                        <div class="row align-items-center gutters-10">
-                                                                                                                            <div class="col">
-                                                                                                                                <div class="progress" style="height: 2px;">
-                                                                                                                                    <div class="progress-bar" role="progressbar" style="width: <?php echo $p; ?>%;" aria-valuenow="<?php echo $p; ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                                                                                </div>
-                                                                                                                            </div>
-                                                                                                                            <div class="col-auto">
-                                                                                                                                <div class="progress-label"><?php echo $p; ?>%</div>
-                                                                                                                            </div>
+                                                                                                        <div class="collapse-default">
+                                                                                                            <a href="javascript:void;" class="link collapsed" data-toggle="collapse" data-target="#demo">
+                                                                                                                <div class="row gutters-15">
+                                                                                                                    <div class="col-auto">
+                                                                                                                        <div class="icon">
+                                                                                                                            <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-image.svg" alt="icon-image.svg">
                                                                                                                         </div>
                                                                                                                     </div>
-                                                                                                                    <!-- end progress bar -->
+                                                                                                                    <div class="col">
+                                                                                                                        <div class="title">
+                                                                                                                            landscape.jpeg
+                                                                                                                        </div>
+                                                                                                                        <?php $p = 10 ?>
+                                                                                                                        <!-- progress bar -->
+                                                                                                                        <div class="progress-default">
+                                                                                                                            <div class="row align-items-center gutters-10">
+                                                                                                                                <div class="col">
+                                                                                                                                    <div class="progress" style="height: 2px;">
+                                                                                                                                        <div class="progress-bar" role="progressbar" style="width: <?php echo $p; ?>%;" aria-valuenow="<?php echo $p; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <div class="col-auto">
+                                                                                                                                    <div class="progress-label"><?php echo $p; ?>%</div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                        <!-- end progress bar -->
+                                                                                                                    </div>
                                                                                                                 </div>
-                                                                                                            </div>
-                                                                                                        </a>
-                                                                                                        <div id="demo" class="collapse">
-                                                                                                            <div class="pt-3">
-                                                                                                                <img src="https://picsum.photos/200/300" alt="">
+                                                                                                            </a>
+                                                                                                            <div id="demo" class="collapse">
+                                                                                                                <div class="pt-3">
+                                                                                                                    <img src="https://picsum.photos/200/300" alt="">
+                                                                                                                </div>
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </td>
@@ -625,12 +629,11 @@
             minimumResultsForSearch: Infinity
         });
 
-        Swal.fire({
-            icon: "error",
-            title: "เกิดข้อผิดพลาด",
-            html: "Authorization this website fail.", //message
-        });
-        
+        // Swal.fire({
+        //     icon: "error",
+        //     title: "เกิดข้อผิดพลาด",
+        //     html: "Authorization this website fail.", //message
+        // });
     </script>
 
 </body>
