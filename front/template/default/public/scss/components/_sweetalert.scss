@@ -1,21 +1,21 @@
-div.swal2-popup{
+div.swal2-popup {
     border-radius: 0;
     width: 26em;
     padding-bottom: 40px;
     color: $--color-default;
     background-color: $--color-light;
 }
-div.swal2-icon{
+div.swal2-icon {
     margin-top: 40px;
     margin-bottom: 0;
 }
-h2.swal2-title{
+h2.swal2-title {
     padding-top: 15px;
     @include font-size($--typo-default);
     font-weight: $--fw-normal;
     color: $--color-primary-300;
 }
-div.swal2-html-container{
+div.swal2-html-container {
     margin-top: 15px;
     margin-bottom: 10px;
     margin-left: 3em;
@@ -26,15 +26,24 @@ div.swal2-html-container{
     overflow: visible;
     line-height: 1.4em;
 }
-.swal2-actions{
-    .btn{
+.swal2-actions {
+    .btn {
         margin: 0 5px;
     }
 }
 
+.swal2-styled {
+    height: 50px;
+    min-width: 134px;
+    border-radius: 25rem !important;
+}
+.swal2-styled.swal2-confirm {
+    color: $--color-light !important;
+    background-color: $--color-primary-300 !important;
+}
 
 // @supports (backdrop-filter: none) {
-//     div.swal2-container.swal2-backdrop-show, 
+//     div.swal2-container.swal2-backdrop-show,
 //     div.swal2-container.swal2-noanimation{
 //         background-color: rgba(255,255,255,0.2;
 //         -webkit-backdrop-filter: blur(30px;
@@ -42,7 +51,7 @@ div.swal2-html-container{
 //     }
 // }
 // @supports not (backdrop-filter: none) {
-//     div.swal2-container.swal2-backdrop-show, 
+//     div.swal2-container.swal2-backdrop-show,
 //     div.swal2-container.swal2-noanimation{
 //         background-color: rgba(255,255,255,0.8;
 //     }

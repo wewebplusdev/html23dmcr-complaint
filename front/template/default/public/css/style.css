@@ -22081,6 +22081,17 @@ div.swal2-html-container {
   margin: 0 5px;
 }
 
+.swal2-styled {
+  height: 50px;
+  min-width: 134px;
+  border-radius: 25rem !important;
+}
+
+.swal2-styled.swal2-confirm {
+  color: #fff !important;
+  background-color: #3056ae !important;
+}
+
 .progress-default {
   margin-bottom: 1rem;
 }

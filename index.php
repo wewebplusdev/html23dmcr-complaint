@@ -581,7 +581,7 @@
                                                                 <div class="icon mb-4">
                                                                     <img class="mx-auto" src="<?php echo $core_template; ?>public/image/asset/save-file-success.svg" alt="save-file-success.svg">
                                                                     <div class="status -success">
-                                                                    <!-- <div class="status -fail"> -->
+                                                                        <!-- <div class="status -fail"> -->
                                                                         <div class="rounded-circle">
                                                                             <span class="feather"></span>
                                                                         </div>
@@ -624,6 +624,13 @@
         $('.select-control').select2({
             minimumResultsForSearch: Infinity
         });
+
+        Swal.fire({
+            icon: "error",
+            title: "เกิดข้อผิดพลาด",
+            html: "Authorization this website fail.", //message
+        });
+        
     </script>
 
 </body>
