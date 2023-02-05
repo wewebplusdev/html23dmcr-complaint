@@ -12,7 +12,7 @@
     padding-bottom: 1rem;
 }
 
-.icon { 
+.icon {
     &.icon-svg {
         display: inline-block;
         width: 14px;
@@ -40,9 +40,9 @@
         background-position: center right;
         background-size: contain;
         min-height: 669px;
-    }
-    .card-body {
-        padding: 2rem;
+        > .card-body {
+            padding: 2rem;
+        }
     }
     .whead {
         .title {
@@ -130,38 +130,110 @@
             margin-left: 1rem;
         }
     }
-    .upload-file-block {
-        .upload-file-btn {
-            .card {
-                text-align: center;
-                background-color: $--color-primary-1;
-                border-radius: 0.5rem;
-                border: none;
-                padding: 2rem;
-                .card-body {
-                    // padding: 0;
-                    border: 1px dashed $--color-primary-100;
-                }
-            }
-            .icon {
-                max-height: 70px;
-                margin-bottom: 1rem;
-            }
-            .upload-btn {
-                margin-bottom: 1rem;
-            }
-            .help-block {
-                font-size: 12px;
-                line-height: 1.4em;
-                margin-bottom: 1rem;
-                &.-limit {
-                    font-size: 8px;
-                }
-                &.-support {
-                    background-color: #b7d2ef;
+}
+
+.upload-file-block {
+    .card {
+        text-align: center;
+        background-color: $--color-primary-1;
+        border-radius: 0.75rem;
+        border: none;
+        padding: 2rem;
+        .card-body {
+            padding-top: 3rem;
+            // border: 1px dashed $--color-primary-100;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23A5C9EFFF' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+            border-radius: 10px;
+        }
+    }
+    .icon {
+        max-height: 70px;
+        margin-bottom: 1rem;
+    }
+    .upload-btn {
+        margin-bottom: 1rem;
+    }
+    .help-block {
+        font-size: 12px;
+        font-weight: $--fw-medium;
+        line-height: 1.4em;
+        margin-bottom: 1rem;
+        &.-limit {
+            font-size: 8px;
+        }
+        &.-support {
+            font-size: 8px;
+            color: $--color-primary-300;
+            width: 50%;
+            padding: 0.75rem;
+            margin: 0 auto;
+            margin-top: 3rem;
+            background-color: #e0efff;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='6' ry='6' stroke='%23A5C9EFFF' stroke-width='1' stroke-dasharray='3%2c6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+            border-radius: 6px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .table {
+        border-collapse: separate;
+        border-radius: 0.75rem;
+        border-spacing: 0;
+        overflow: hidden;
+        overflow-x: auto;
+        border: 1px solid $--color-border;
+        thead {
+            tr {
+                th {
+                    border-top: transparent;
+                    border-bottom: 1px solid $--color-border;
+                    &:not(:last-child) {
+                        border-right: 1px solid $--color-border;
+                    }
                 }
             }
         }
+        tbody {
+            tr {
+                td {
+                    border-top: transparent;
+                    border-bottom: 1px solid $--color-border;
+                    &:not(:last-child) {
+                        border-right: 1px solid $--color-border;
+                    }
+                }
+            }
+        }
+        td,
+        th {
+            font-size: 10px;
+            padding: 1rem;
+        }
+        th {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+        .file-return {
+            .link {
+                color: $--color-default;
+            }
+            .icon > img {
+                width: 10px;
+            }
+            .title {
+                line-height: 1.2em;
+                margin-bottom: 0.5rem;
+            }
+            .desc {
+                font-size: 6px;
+                line-height: 1.2em;
+            }
+        }
+    }
+    .upload-file-btn ~ * {
+        margin-top: 1.5rem;
+        margin-bottom: 0;
     }
 }
 
@@ -275,6 +347,15 @@
     .report .contact {
         padding-left: 50px;
     }
+    .upload-file-block .card .card-body {
+        padding-top: 2rem;
+    }
+    .upload-file-block .help-block.-support {
+        margin-top: 2rem;
+    }
+    .upload-file-block .help-block.-support {
+        width: 100%;
+    }
 }
 
 // breakpoint 991px
@@ -296,7 +377,7 @@
     .step-block .item:last-child::after {
         right: calc(50% + 28px);
     }
-    .report .card-body {
+    .report > [class*="card-step"] > .card-body {
         padding: 0;
     }
     .report .left-side {
@@ -397,6 +478,9 @@
         height: 100% !important;
         margin-bottom: 1.5rem;
     }
+    .upload-file-block .card {
+        padding: 1.25rem;
+    }
 }
 
 // breakpoint 575px
@@ -410,5 +494,11 @@
     }
     .report .contact {
         width: 100%;
+    }
+    .upload-file-block .table thead tr th:first-child {
+        width: 35% !important;
+    }
+    .upload-file-block .table thead tr th:nth-child(2) {
+        width: 55% !important;
     }
 }

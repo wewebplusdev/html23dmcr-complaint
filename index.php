@@ -15,22 +15,6 @@
 
             <div class="default-page">
 
-                <?php $i = 10 ?>
-                <!-- progress bar -->
-                <div class="progress-default d-none">
-                    <div class="row align-items-center gutters-10">
-                        <div class="col">
-                            <div class="progress" style="height: 2px;">
-                                <div class="progress-bar" role="progressbar" style="width: <?php echo $i; ?>%;" aria-valuenow="<?php echo $i; ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <div class="progress-label"><?php echo $i; ?>%</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end progress bar -->
-
                 <div class="default-head">
                     <div class="container">
                         <div class="whead text-center">
@@ -318,12 +302,12 @@
                                                             <div class="upload-file">
                                                                 <!--  data-aos="fade-up" data-aos-duration="2000" -->
                                                                 <div class="form-group">
-                                                                    <label class="control-label" for="">เอกสารแนบ</label>
+                                                                    <!-- <label class="control-label" for="">เอกสารแนบ</label> -->
                                                                     <div class="upload-file-block">
                                                                         <div class="row">
                                                                             <div class="col-12">
-                                                                                <label for="use-only-upload-1" class="upload-file-btn contact-form-att -upload-1" style="width: 100%;">
-                                                                                    <div class="card">
+                                                                                <div class="card">
+                                                                                    <label for="use-only-upload-1" class="upload-file-btn contact-form-att -upload-1 mb-0" style="width: 100%; cursor:pointer">
                                                                                         <div class="card-body">
                                                                                             <div class="icon">
                                                                                                 <img class="mx-auto" src="<?php echo $core_template; ?>public/image/asset/upload-file-graphic.svg" alt="upload-file-graphic.svg">
@@ -334,8 +318,89 @@
                                                                                             <div class="help-block -limit">Maximum file size 50 MB.</div>
                                                                                             <div class="help-block -support">Supports: PNG., JPEG., JPEG2000</div>
                                                                                         </div>
+                                                                                    </label>
+                                                                                    <!--  data-aos="fade-up" data-aos-duration="2000" -->
+                                                                                    <div class="form-group" id="file-01">
+                                                                                        <table class="table text-left m-0">
+                                                                                            <thead class="w-100">
+                                                                                                <tr class="text-uppercase">
+                                                                                                    <th class="pl-md-4" scope="col" style="width:20%;">DATE</th>
+                                                                                                    <th class="text-gray-100" scope="col" style="width:80%;">FILE NAME</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody class="file-return">
+                                                                                                <!-- {* body file list *} -->
+                                                                                                <?php for ($i = 1; $i <= 2; $i++) { ?>
+                                                                                                <?php } ?>
+
+                                                                                                <tr class="fw-medium">
+                                                                                                    <td class="pl-md-4">12 ม.ค.</td>
+                                                                                                    <td>
+                                                                                                        <a href="javascript:void;" class="link" data-toggle="collapse" data-target="#demo">
+                                                                                                            <div class="row gutters-15">
+                                                                                                                <div class="col-auto">
+                                                                                                                    <div class="icon">
+                                                                                                                        <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-image.svg" alt="icon-image.svg">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col">
+                                                                                                                    <div class="title">
+                                                                                                                        landscape.jpeg
+                                                                                                                    </div>
+                                                                                                                    <div class="desc text-gray-100">2.4 mb.</div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                        <div id="demo" class="collapse">
+                                                                                                            <div class="pt-3">
+                                                                                                                <img src="https://picsum.photos/200/300" alt="">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="pl-md-4">12 ม.ค.</td>
+                                                                                                    <td>
+                                                                                                        <a href="javascript:void;" class="link" data-toggle="collapse" data-target="#demo">
+                                                                                                            <div class="row gutters-15">
+                                                                                                                <div class="col-auto">
+                                                                                                                    <div class="icon">
+                                                                                                                        <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-image.svg" alt="icon-image.svg">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="col">
+                                                                                                                    <div class="title">
+                                                                                                                        landscape.jpeg
+                                                                                                                    </div>
+                                                                                                                    <?php $p = 10 ?>
+                                                                                                                    <!-- progress bar -->
+                                                                                                                    <div class="progress-default">
+                                                                                                                        <div class="row align-items-center gutters-10">
+                                                                                                                            <div class="col">
+                                                                                                                                <div class="progress" style="height: 2px;">
+                                                                                                                                    <div class="progress-bar" role="progressbar" style="width: <?php echo $p; ?>%;" aria-valuenow="<?php echo $p; ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                            <div class="col-auto">
+                                                                                                                                <div class="progress-label"><?php echo $p; ?>%</div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <!-- end progress bar -->
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                        <div id="demo" class="collapse">
+                                                                                                            <div class="pt-3">
+                                                                                                                <img src="https://picsum.photos/200/300" alt="">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
                                                                                     </div>
-                                                                                </label>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="col-12" id="boxFileNew">
                                                                             </div>
@@ -343,20 +408,7 @@
                                                                     </div>
 
                                                                 </div>
-                                                                <!--  data-aos="fade-up" data-aos-duration="2000" -->
-                                                                <div class="form-group" id="file-01">
-                                                                    <table class="table">
-                                                                        <thead>
-                                                                            <tr>
-                                                                                <th scope="col">DATE</th>
-                                                                                <th scope="col">FILE NAME</th>
-                                                                            </tr>
-                                                                        </thead>
-                                                                        <tbody class="file-return">
-                                                                            {* body file list *}
-                                                                        </tbody>
-                                                                    </table>
-                                                                </div>
+
                                                             </div>
                                                         </div>
                                                         <div class="contact-form-action">

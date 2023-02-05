@@ -20758,7 +20758,7 @@ template {
   color: #ff5050 !important;
 }
 
-.text-gray {
+.text-gray-100 {
   color: #9a9a9a !important;
 }
 
@@ -22563,7 +22563,7 @@ div.swal2-html-container {
   background-size: contain;
   min-height: 669px;
 }
-.report .card-body {
+.report > [class*=card-step] > .card-body {
   padding: 2rem;
 }
 .report .whead .title {
@@ -22669,33 +22669,97 @@ div.swal2-html-container {
 .report .contact-form-action .btn + .btn {
   margin-left: 1rem;
 }
-.report .upload-file-block .upload-file-btn .card {
+
+.upload-file-block .card {
   text-align: center;
   background-color: #F6FAFF;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   border: none;
   padding: 2rem;
 }
-.report .upload-file-block .upload-file-btn .card .card-body {
-  border: 1px dashed #a5c9ef;
+.upload-file-block .card .card-body {
+  padding-top: 3rem;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23A5C9EFFF' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 10px;
 }
-.report .upload-file-block .upload-file-btn .icon {
+.upload-file-block .icon {
   max-height: 70px;
   margin-bottom: 1rem;
 }
-.report .upload-file-block .upload-file-btn .upload-btn {
+.upload-file-block .upload-btn {
   margin-bottom: 1rem;
 }
-.report .upload-file-block .upload-file-btn .help-block {
+.upload-file-block .help-block {
   font-size: 12px;
+  font-weight: 500;
   line-height: 1.4em;
   margin-bottom: 1rem;
 }
-.report .upload-file-block .upload-file-btn .help-block.-limit {
+.upload-file-block .help-block.-limit {
   font-size: 8px;
 }
-.report .upload-file-block .upload-file-btn .help-block.-support {
-  background-color: #b7d2ef;
+.upload-file-block .help-block.-support {
+  font-size: 8px;
+  color: #3056ae;
+  width: 50%;
+  padding: 0.75rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+  background-color: #e0efff;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='6' ry='6' stroke='%23A5C9EFFF' stroke-width='1' stroke-dasharray='3%2c6' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 6px;
+}
+.upload-file-block .help-block:last-child {
+  margin-bottom: 0;
+}
+.upload-file-block .table {
+  border-collapse: separate;
+  border-radius: 0.75rem;
+  border-spacing: 0;
+  overflow: hidden;
+  overflow-x: auto;
+  border: 1px solid #e0eefb;
+}
+.upload-file-block .table thead tr th {
+  border-top: transparent;
+  border-bottom: 1px solid #e0eefb;
+}
+.upload-file-block .table thead tr th:not(:last-child) {
+  border-right: 1px solid #e0eefb;
+}
+.upload-file-block .table tbody tr td {
+  border-top: transparent;
+  border-bottom: 1px solid #e0eefb;
+}
+.upload-file-block .table tbody tr td:not(:last-child) {
+  border-right: 1px solid #e0eefb;
+}
+.upload-file-block .table td,
+.upload-file-block .table th {
+  font-size: 10px;
+  padding: 1rem;
+}
+.upload-file-block .table th {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.upload-file-block .table .file-return .link {
+  color: #153045;
+}
+.upload-file-block .table .file-return .icon > img {
+  width: 10px;
+}
+.upload-file-block .table .file-return .title {
+  line-height: 1.2em;
+  margin-bottom: 0.5rem;
+}
+.upload-file-block .table .file-return .desc {
+  font-size: 6px;
+  line-height: 1.2em;
+}
+.upload-file-block .upload-file-btn ~ * {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 .step-block {
@@ -22812,6 +22876,15 @@ div.swal2-html-container {
   .report .contact {
     padding-left: 50px;
   }
+  .upload-file-block .card .card-body {
+    padding-top: 2rem;
+  }
+  .upload-file-block .help-block.-support {
+    margin-top: 2rem;
+  }
+  .upload-file-block .help-block.-support {
+    width: 100%;
+  }
 }
 @media (max-width: 991px) {
   .step-block .item .icon {
@@ -22831,7 +22904,7 @@ div.swal2-html-container {
   .step-block .item:last-child::after {
     right: calc(50% + 28px);
   }
-  .report .card-body {
+  .report > [class*=card-step] > .card-body {
     padding: 0;
   }
   .report .left-side {
@@ -22913,6 +22986,9 @@ div.swal2-html-container {
     height: 100% !important;
     margin-bottom: 1.5rem;
   }
+  .upload-file-block .card {
+    padding: 1.25rem;
+  }
 }
 @media (max-width: 575px) {
   .report .contact-form-action .btn {
@@ -22924,6 +23000,12 @@ div.swal2-html-container {
   }
   .report .contact {
     width: 100%;
+  }
+  .upload-file-block .table thead tr th:first-child {
+    width: 35% !important;
+  }
+  .upload-file-block .table thead tr th:nth-child(2) {
+    width: 55% !important;
   }
 }
 @media (min-width: 1200px) {
