@@ -22550,6 +22550,45 @@ div.swal2-html-container {
   padding-bottom: 1rem;
 }
 
+.alert .icon .status {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
+.alert .status .rounded-circle {
+  border: 2px solid #fff;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.alert .status .rounded-circle > span {
+  font-size: 30px;
+  font-weight: bold;
+}
+.alert .status.-success .rounded-circle {
+  color: #fff;
+  background-color: #71c003;
+}
+.alert .status.-success .feather::before {
+  content: "\e83f";
+}
+.alert .status.-fail .rounded-circle {
+  color: #fff;
+  background-color: #ff5050;
+}
+.alert .status.-fail .feather::before {
+  content: "\e8f6";
+}
+
 .icon.icon-svg {
   display: inline-block;
   width: 14px;
@@ -22581,6 +22620,9 @@ div.swal2-html-container {
 }
 .report > [class*=card-step] > .card-body {
   padding: 2rem 3rem;
+}
+.report > [class*=card-step] .alert .icon img {
+  width: 133px;
 }
 .report .whead .title {
   font-size: 22px;
@@ -22686,13 +22728,17 @@ div.swal2-html-container {
   margin-left: 1rem;
 }
 
-.upload-file-block .card {
+.card-inner {
   text-align: center;
   background-color: #F6FAFF;
   border-radius: 0.75rem;
   border: none;
   padding: 2rem;
 }
+.card-inner .card-body {
+  min-height: 420px;
+}
+
 .upload-file-block .card .card-body {
   padding-top: 3rem;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23A5C9EFFF' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
@@ -22977,7 +23023,8 @@ div.swal2-html-container {
     top: 36.5px;
     left: 0;
   }
-  .step-block .item:not(:first-child)::before {
+  .step-block .item:not(:first-child)::before,
+.step-block .item.active:last-child:after {
     display: none;
   }
   .step-block .progress-default .progress.progress-step-1 .progress-bar {
@@ -23002,8 +23049,24 @@ div.swal2-html-container {
     height: 100% !important;
     margin-bottom: 1.5rem;
   }
-  .upload-file-block .card {
+  .card-inner {
     padding: 1.25rem;
+  }
+  .card-inner .card-body {
+    min-height: 380px;
+  }
+  .report > [class*=card-step] .alert .icon img {
+    width: 100px;
+  }
+  .alert .status .rounded-circle {
+    width: 42px;
+    height: 42px;
+  }
+  .alert .status .rounded-circle > span {
+    font-size: 24px;
+  }
+  .alert .icon .status {
+    left: calc(50% - 26px);
   }
 }
 @media (max-width: 575px) {
@@ -23022,6 +23085,9 @@ div.swal2-html-container {
   }
   .upload-file-block .table thead tr th:nth-child(2) {
     width: 55% !important;
+  }
+  .card-inner .card-body {
+    min-height: 320px;
   }
 }
 @media (min-width: 1200px) {

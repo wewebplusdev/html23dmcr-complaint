@@ -12,6 +12,49 @@
     padding-bottom: 1rem;
 }
 
+.alert {
+    .icon {
+        .status {
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 30px);
+        }
+    }
+    .status {
+        .rounded-circle {
+            border: 2px solid $--color-light;
+            width: 48px;
+            height: 48px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            > span {
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+        &.-success {
+            .rounded-circle {
+                color: $--color-light;
+                background-color: $--color-success;
+            }
+            .feather::before {
+                content: "\e83f";
+            }
+        }
+        &.-fail {
+            .rounded-circle {
+                color: $--color-light;
+                background-color: $--color-danger;
+            }
+            .feather::before {
+                content: "\e8f6";
+            }
+        }
+    }
+}
+
 .icon {
     &.icon-svg {
         display: inline-block;
@@ -42,6 +85,13 @@
         min-height: 669px;
         > .card-body {
             padding: 2rem 3rem;
+        }
+        .alert {
+            .icon {
+                img {
+                    width: 133px;
+                }
+            }
         }
     }
     .whead {
@@ -132,16 +182,21 @@
     }
 }
 
+.card-inner {
+    text-align: center;
+    background-color: $--color-primary-1;
+    border-radius: 0.75rem;
+    border: none;
+    padding: 2rem;
+    .card-body {
+        min-height: 420px;
+    }
+}
+
 .upload-file-block {
     .card {
-        text-align: center;
-        background-color: $--color-primary-1;
-        border-radius: 0.75rem;
-        border: none;
-        padding: 2rem;
         .card-body {
             padding-top: 3rem;
-            // border: 1px dashed $--color-primary-100;
             background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23A5C9EFFF' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
             border-radius: 10px;
         }
@@ -339,7 +394,6 @@
     }
 }
 
-
 // breakpoint 1600px
 @media (max-width: $breakpoint-xxxl) {
 }
@@ -447,7 +501,8 @@
         top: calc(73px / 2);
         left: 0;
     }
-    .step-block .item:not(:first-child)::before {
+    .step-block .item:not(:first-child)::before,
+    .step-block .item.active:last-child:after {
         display: none;
     }
 
@@ -486,8 +541,24 @@
         height: 100% !important;
         margin-bottom: 1.5rem;
     }
-    .upload-file-block .card {
+    .card-inner {
         padding: 1.25rem;
+    }
+    .card-inner .card-body {
+        min-height: 380px;
+    }
+    .report > [class*="card-step"] .alert .icon img {
+        width: 100px;
+    }
+    .alert .status .rounded-circle {
+        width: 42px;
+        height: 42px;
+    }
+    .alert .status .rounded-circle > span {
+        font-size: 24px;
+    }
+    .alert .icon .status {
+        left: calc(50% - 26px);
     }
 }
 
@@ -508,5 +579,8 @@
     }
     .upload-file-block .table thead tr th:nth-child(2) {
         width: 55% !important;
+    }
+    .card-inner .card-body {
+        min-height: 320px;
     }
 }

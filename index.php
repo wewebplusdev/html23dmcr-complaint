@@ -24,7 +24,7 @@
                         </div>
                         <div class="step-block">
                             <div class="progress-default d-md-none d-block">
-                                <div class="progress progress-step-4" style="height: 4px;">
+                                <div class="progress progress-step-5" style="height: 4px;">
                                     <div class="progress-bar"></div>
                                 </div>
                             </div>
@@ -53,7 +53,7 @@
                                         รูปภาพหรือไฟล์แนบ
                                     </div>
                                 </div>
-                                <div class="col item step-4 active">
+                                <div class="col item step-4">
                                     <div class="icon">
                                         <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-resume.svg" alt="icon-resume.svg">
                                     </div>
@@ -61,7 +61,7 @@
                                         ข้อมูลผู้แจ้งเหตุ
                                     </div>
                                 </div>
-                                <div class="col item step-5">
+                                <div class="col item step-5 active">
                                     <div class="icon">
                                         <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-done.svg" alt="icon-done.svg">
                                     </div>
@@ -307,7 +307,7 @@
                                                                     <div class="upload-file-block">
                                                                         <div class="row">
                                                                             <div class="col-12">
-                                                                                <div class="card">
+                                                                                <div class="card card-inner">
                                                                                     <label for="use-only-upload-1" class="upload-file-btn contact-form-att -upload-1 mb-0" style="width: 100%; cursor:pointer">
                                                                                         <div class="card-body">
                                                                                             <div class="icon">
@@ -452,7 +452,7 @@
                             <!-- end Step 3 -->
 
                             <!-- Step 4 -->
-                            <div class="card card-step-4">
+                            <div class="card card-step-4" style="display: none;">
                                 <div class="card-body">
                                     <div class="row justify-content-between">
                                         <div class="col-xl-7 col-lg-6">
@@ -554,6 +554,56 @@
                             </div>
                             <!-- end Step 4 -->
 
+                            <!-- Step 5 -->
+                            <div class="card card-step-5">
+                                <div class="card-body">
+                                    <div class="row justify-content-between">
+                                        <div class="col-xl-7 col-lg-6">
+                                            <div class="left-side">
+                                                <!--  data-aos="fade-up" data-aos-duration="2000" -->
+                                                <div class="whead">
+                                                    <h3 class="title">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="icon">
+                                                                <img style="-webkit-user-select: none" src="<?php echo $core_template; ?>public/image/icon/icon-resume.svg" alt="icon-resume.svg">
+                                                            </div>
+                                                            <div class="txt">
+                                                                ข้อมูลผู้แจ้งเหตุ
+                                                            </div>
+                                                        </div>
+                                                    </h3>
+                                                </div>
+                                                <!-- Step 5  -->
+                                                <div id="step-5">
+                                                    <div class="card card-inner">
+                                                        <div class="card-body d-flex align-items-center justify-content-center">
+                                                            <div class="alert mb-0">
+                                                                <div class="icon mb-4">
+                                                                    <img class="mx-auto" src="<?php echo $core_template; ?>public/image/asset/save-file-success.svg" alt="save-file-success.svg">
+                                                                    <div class="status -success">
+                                                                    <!-- <div class="status -fail"> -->
+                                                                        <div class="rounded-circle">
+                                                                            <span class="feather"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <h4 class="alert-heading typo-lg fw-bold mb-4">บันทึกข้อมูลเรียบร้อย</h4>
+                                                                <a href="index.php" type="submit" class="btn btn-primary btn-gradient rounded-pill">
+                                                                    <span class="feather icon-home"></span> หน้าหลัก
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4">
+                                            <?php include('inc/components/right-side.php'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end Step 5 -->
 
                         </div>
                     </div>
